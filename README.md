@@ -1,23 +1,71 @@
-# How to Select a Row or Cell in the Vue Gantt Chart
+# Vue Gantt Chart Selection Demo
 
-A quick start project that allows you to perform selection in the Vue Gantt Chart component of Syncfusion. It also includes a code example to select one or more rows and cells using built-in properties of Vue Gantt Chart.
+A Vue 3 demo repository for Syncfusion Gantt row selection with sample task data.
 
-Refer to the following selection documentation for the Syncfusion Vue Gantt Chart component: 
-https://helpej2.syncfusion.com/vue/documentation/gantt/selection/selection
+## Overview
 
-Check out this online selection example of the Syncfusion Vue Gantt Chart component: 
-https://ej2.syncfusion.com/vue/demos/#/material/gantt/selection.html
+This repository contains a Vue app demonstrating Syncfusion Vue Gantt row selection with multiple selection and record logging.
 
-Refer to the following documentation for the feature modules in the Syncfusion Vue Gantt Chart component: 
-https://ej2.syncfusion.com/vue/documentation/gantt/module 
+## Project structure
 
-Refer to the following Syncfusion Vue Gantt Chart Getting Started video:
-https://www.youtube.com/watch?v=S1GbWmVcre0
+- `src/App.vue`
+- `src/data.js`
+- `src/main.js`
 
-## Project prerequisites
+## Features
 
-Make sure that you have the latest versions of Vue, Node, Vue Class Component, and Visual Studio Code in your machine before starting to work on this project.
+- Row selection with toggle support
+- Selected row index and record logging
+- Nested task data
 
-### How to run this application?
+## Prerequisites
 
-To run this application, you need to clone the `how-to-select-a-row-or-cell-in-the-vue-gantt-chart-component` repository and then open it in Visual Studio Code. Now, simply install all the necessary react packages into your current project using the `npm install` command and run your project using the `npm run serve` command.
+- Node.js 14+
+- npm
+- Vue CLI if required
+
+## Setup
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Add a Syncfusion license in `src/main.js`:
+   ```js
+   registerLicense("Your license key")
+   ```
+3. Start the app:
+   ```bash
+   npm run serve
+   ```
+
+## Usage
+
+The Gantt chart uses:
+
+- `allowSelection: true`
+- `selectionSettings: { type: 'Multiple', mode: 'Row', enableToggle: true }`
+
+The button logs selection via:
+
+```js
+let ganttObj = this.$refs.gantt.ej2Instances;
+console.log(ganttObj.selectionModule.getSelectedRowIndexes())
+console.log(ganttObj.selectionModule.getSelectedRecords())
+```
+
+## Notes
+
+- Change `mode` to `Cell` for cell selection.
+- Sample data is in `src/data.js`.
+- Styles load from the Syncfusion CDN in `App.vue`.
+
+## Dependencies
+
+- `vue`
+- `@syncfusion/ej2-vue-gantt`
+- `@syncfusion/ej2-vue-buttons`
+
+## Link
+
+- Syncfusion selection docs: https://helpej2.syncfusion.com/vue/documentation/gantt/selection/selection
