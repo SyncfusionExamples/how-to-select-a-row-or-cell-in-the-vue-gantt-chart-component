@@ -1,6 +1,6 @@
 # Vue Gantt Chart Selection Demo
 
-A Vue 3 sample application demonstrating row selection behavior in the Syncfusion Vue Gantt Chart component using hierarchical task data.
+A Vue 3 sample application demonstrating row selection behavior in the [Vue Gantt Chart](https://www.syncfusion.com/vue-components/vue-gantt-chart) component using hierarchical task data.
 
 ## Project Overview
 
@@ -50,6 +50,10 @@ A button in the UI retrieves the Gantt instance through a template reference and
 - Sample task data is loaded from a local data source.
 - Syncfusion theme styles are referenced to apply consistent Gantt styling.
 
-## Link
+## Related Links
 
-- Syncfusion selection docs: https://helpej2.syncfusion.com/vue/documentation/gantt/selection/selection
+- [Explore Vue Gantt Chart](https://www.syncfusion.com/vue-components/vue-gantt-chart)
+- [Documentation](https://helpej2.syncfusion.com/vue/documentation/gantt/selection/selection)
+- [Vue Gantt Chart Getting Started Guide](https://ej2.syncfusion.com/vue/documentation/gantt/getting-started-vue)
+- [Feature Modules](https://ej2.syncfusion.com/vue/documentation/gantt/module)
+- [Vue Gantt Chart Live Demos and Examples](https://ej2.syncfusion.com/vue/demos/#/tailwind3/gantt/default.html)
